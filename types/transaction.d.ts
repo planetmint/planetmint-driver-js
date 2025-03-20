@@ -239,7 +239,7 @@ export default class Transaction {
     assetData: CID[],
     metadata: CID,
     outputs: TransactionOutput[],
-    ...issuers: string[]
+    issuers: string[]
   ): CreateTransaction<TransactionVersion.V3, CID[]>;
 
   static makeCreateTransactionV2<

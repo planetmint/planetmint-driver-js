@@ -57,7 +57,7 @@ jobs:
       - name: Run Planetmint node
         run: |
           echo Building and starting up docker containers
-          docker-compose -f ./docker-compose.yml up -d
+          docker compose -f ./docker-compose.yml up -d
 
       - name: Install dependencies
         env:
